@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+@font-face {
+    font-family: "FonteLogo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/_imagens/papiro.jpg");
+    color: rgb(0, 0, 0, 0.8);
+    width: 95%;
+}
+
+div#interface {
+    width: 900px;
+    background-color: antiquewhite;
+    margin: -20 auto 0 auto;
+    box-shadow: 0px 0px 10px red;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 500px;
+    top: 40px;
+
+}
+
+header#cabecalho {
+    border-bottom: 10px orange solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;
+}
+
+header#cabecalho h1 {
+    font-family: "FonteLogo";
+    font-size: 30px;
+    color: brown;
+    text-shadow: 2px 2px 2px orange;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: "font-family: 'Titillium Web', sans-serif";
+    color: brown;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+/* formatação de imagens com legendas */
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid rgb(253, 174, 100);
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width:100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação do menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+
+}
+
+nav#menu li {
+    display: inline-block;
+    font-size: 13px;
+    background-color: rgb(231, 230, 229);
+    padding: center;
+    margin: 2px;
+    transition: 1s;
+      
+}
+
+nav#menu li :hover {
+    background-color: rgb(248, 25, 25);
+    transition: 1s;
+    color: white;
+    padding: 10px;
+    margin: -1px;
+    text-decoration: underline;
+}
+
+nav#menu h1 {
+    display: none;
+}
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+    border-right: 1px solid grey;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 15pt;
+    color:blueviolet;
+    background-color: aquamarine;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+
+}
+
+header#cabecalho-artigo h1 {
+    font-family:"FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: blue;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 20px;
+    color: black;
+    background-color:bisque;
+    margin-bottom: 0px;
+    
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 20px;
+    color:brown;
+    
+}
+
+.direita {
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px solid grey;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+table#tabelaspec td {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}   
+
+table#tabelaspec td.ce {
+    color: rgb(24, 122, 207);
+    background-color: bisque;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+table#tabelaspec td.cd {
+    color: black;
+    background-color: blanchedalmond;
+
+}
+
+table#tabelaspec caption {
+    color: brown;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    color: blue;
+    font-size: 10pt;
+    float: right;
+    margin-top: 10px;
+    
+}
+
+aside#lateral {
+    display: block;
+    width: 250px;
+    float: right;
+    background-color: azure;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+aside#lateral h1 {
+    font-size: 20pt;
+    color: brown;
+}
+
+aside#lateral h2 {
+    font-size: 20px;
+    
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid grey;
+}
+
+footer#rodape p {
+    text-align: center;
+}
